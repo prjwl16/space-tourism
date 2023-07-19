@@ -3,26 +3,27 @@ import Link from 'next/link';
 
 interface ComponentProps {
     items: Item[];
+    onTabChange: (item: Item) => void;
 }
 
-function NavItem({ items }: ComponentProps) {
+function MiniNavbar({ items, onTabChange }: ComponentProps) {
     return (
-        <div className="navitems flex gap-9 desktop:gap-12">
+        <div className="navitems flex gap-7 desktop:gap-12">
             {items.map((key, index) => (
                 <ul key={index}>
-                    <Link
-                        href={key.link}
-                        className="font-barlowCondensed text-base font-normal"
+                    <p
+                        className="text-sm font-normal tracking-wider font-barlowCondensed tablet:text-lg tablet:tracking-widest"
+                        onClick={() => onTabChange(key)}
                     >
                         {' '}
                         <span className="max-desktop:hidden">
                             {key.prefix}
                         </span>{' '}
                         {key.name}
-                    </Link>
+                    </p>
                 </ul>
             ))}
         </div>
     );
 }
-export default NavItem;
+export default MiniNavbar;

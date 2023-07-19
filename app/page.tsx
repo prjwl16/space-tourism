@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <main className="main flex flex-col justify-center items-center w-full flex-grow box-border desktop:flex-row desktop:justify-evenly">
+        <div className="flex flex-col justify-center items-center m-auto h-full desktop:flex-row desktop:justify-between desktop:w-4/5">
             <div className="desc flex flex-col m-4 justify-center items-center desktop:justify-start desktop:items-start">
                 <p className="text-nav font-thin tracking-widest leading-6 tablet:text-body desktop:text-h5">
                     SO, YOU WANT TO TRAVEL TO
@@ -20,6 +20,6 @@ export default function Home() {
                     EXPLORE
                 </button>
             </div>
-        </main>
+        </div>
     );
 }

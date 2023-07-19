@@ -11,10 +11,12 @@ module.exports = {
                 black: '#0B0D17',
                 lightPurpule: '#D0D6F9',
                 white: '#FFFFFF',
+                gray: '#383B4B',
             },
             fontFamily: {
                 barlowCondensed: ['Barlow Condensed', 'sans-serif'],
                 bellefair: ['Bellefair', 'serif'],
+                barlow: ['Barlow', 'sans-serif'],
             },
             fontSize: {
                 h1: '150px',
@@ -49,6 +51,19 @@ module.exports = {
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'hero-mobile':
                     "url('../public/home/background-home-mobile.jpg')",
+                'destination-mobile':
+                    "url('../public/destination/background-destination-mobile.jpg')",
+            },
+            height: {
+                min: '1px',
+                mobile_moon: '170px',
+                tablet_moon: '300px',
+                desktop_moon: '445px',
+            },
+            width: {
+                mobile_moon: '170px',
+                tablet_moon: '300px',
+                desktop_moon: '445px',
             },
         },
     },

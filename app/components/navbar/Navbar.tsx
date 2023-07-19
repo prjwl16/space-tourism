@@ -1,7 +1,9 @@
+'use client';
 import Image from 'next/image';
-import logo from '@/public/logo.svg';
+import logo from '@/public/logo.png';
 import ham from '@/public/ham.svg';
 import NavItem from './NavItems';
+import React from 'react';
 
 const items = [
     {
@@ -12,25 +14,23 @@ const items = [
     {
         prefix: '01',
         name: 'DESTINATION',
-        link: '/',
+        link: '/destination',
     },
     {
         prefix: '02',
         name: 'CREW',
-        link: '/',
+        link: '/crew',
     },
     {
         prefix: '03',
         name: 'TECHNOLOGY',
-        link: '/',
+        link: '/technology',
     },
 ];
 
 function Navbar() {
-    const onTabChange = () => {};
-
     return (
-        <div className="flex justify-between items-center box-border p-4 desktop:px-8 desktop:mt-6">
+        <div className="flex justify-between items-center box-border m-6 mb-0 desktop:px-8 desktop:mt-6">
             {/* <div className="navDiv h-20 flex justify-between items-center max-tablet:hidden absolute right-0 pr-10"></div> */}
             <div className="logo">
                 <Image src={logo} alt="logo" />
@@ -39,7 +39,6 @@ function Navbar() {
                 <Image src={ham} alt="ham" />
             </div>
             <div className="navItems hidden tablet:block">
-                {/* suppress this error */}
                 <NavItem items={items} />
             </div>
         </div>
