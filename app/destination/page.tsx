@@ -41,15 +41,15 @@ function Destination() {
     };
 
     return (
-        <div className="flex flex-col h-full">
-            <p className="text-center tracking-wides text-base font-normal tablet:text-xl tablet:text-left tablet:ml-9 tablet:mt-16 desktop:text-[28px] desktop:ml-20">
+        <div className="flex flex-col h-full desktop:w-5/6 desktop:m-auto">
+            <p className="text-center tracking-wides text-base font-normal tablet:text-xl tablet:text-left desktop:text-[28px] tablet:ml-20 desktop:m-0">
                 <span className="opacity-25">01</span>
                 <span className="ml-2 desktop:ml-4 desktop:tracking-widest">
                     PICK YOUR DESTINATION
                 </span>
             </p>
-            <div className="flex justify-center items-center flex-col mt-8 desktop:flex-row desktop:mt-24 desktop:ml-20 desktop:flex-grow">
-                <div className="image flex justify-center items-center desktop:flex-1 mb-7 desktop:m-0 desktop:items-end">
+            <div className="flex justify-center items-center flex-col mt-8 desktop:flex-row desktop:mt-24 desktop:flex-grow desktop:justify-start">
+                <div className="image flex justify-start items-center desktop:flex-1 mb-7 desktop:m-0 desktop:items-end">
                     <Image
                         src={place?.image || '../../fake.png'}
                         alt="moon"
@@ -63,7 +63,7 @@ function Destination() {
                     <p className="font-bellefair text-center text-6xl font-normal mt-5 leading-tight tablet:text-7xl desktop:text-h2 desktop:text-left">
                         {place?.place}
                     </p>
-                    <p className="font-barlow leading-6 text-sm text-center px-6 tablet:px-24 desktop:leading-8 desktop:p-0 desktop:text-left desktop:text-lg desktop:pr-52">
+                    <p className="font-barlow leading-6 text-sm text-center px-6 tablet:px-24 desktop:leading-8 desktop:p-0 desktop:text-left desktop:text-lg desktop:w-3/4">
                         {place?.description}
                     </p>
                     <div className="h-min w-4/5 mt-8 bg-gray desktop:mt-14 desktop:w-3/4"></div>

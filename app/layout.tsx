@@ -23,10 +23,10 @@ export default function RootLayout({
                 suppressHydrationWarning={true}
                 className={'flex flex-col min-h-screen max-w-screen-max m-auto'}
             >
-                <nav>
+                <nav className="m-auto w-5/6">
                     <Navbar />
                 </nav>
-                <main className="main flex-grow flex justify-center">
+                <main className="main flex-grow flex items-center">
                     {children}
                 </main>
             </body>

@@ -30,7 +30,7 @@ const items = [
 
 function Navbar() {
     return (
-        <div className="flex justify-between items-center box-border m-6 mb-0 desktop:px-8 desktop:mt-6">
+        <div className="flex justify-between items-center box-border mt-4 desktop:mt-6">
             {/* <div className="navDiv h-20 flex justify-between items-center max-tablet:hidden absolute right-0 pr-10"></div> */}
             <div className="logo">
                 <Image src={logo} alt="logo" />

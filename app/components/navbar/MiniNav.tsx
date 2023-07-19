@@ -8,7 +8,7 @@ interface ComponentProps {
 
 function MiniNavbar({ items, onTabChange }: ComponentProps) {
     return (
-        <div className="navitems flex gap-7 desktop:gap-12">
+        <div className="navitems flex gap-7 desktop:gap-12 h-8 desktop:pb-12">
             {items.map((key, index) => (
                 <ul key={index}>
                     <p
