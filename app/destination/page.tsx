@@ -41,14 +41,14 @@ function Destination() {
     };
 
     return (
-        <div className="bg-destination-mobile">
+        <div className="flex flex-col h-full">
             <p className="text-center tracking-wides text-base font-normal tablet:text-xl tablet:text-left tablet:ml-9 tablet:mt-16 desktop:text-[28px] desktop:ml-20">
                 <span className="opacity-25">01</span>
                 <span className="ml-2 desktop:ml-4 desktop:tracking-widest">
                     PICK YOUR DESTINATION
                 </span>
             </p>
-            <div className="flex justify-center items-center flex-col mt-8 desktop:flex-row desktop:mt-24 desktop:ml-20">
+            <div className="flex justify-center items-center flex-col mt-8 desktop:flex-row desktop:mt-24 desktop:ml-20 desktop:flex-grow">
                 <div className="image flex justify-center items-center desktop:flex-1 mb-7 desktop:m-0 desktop:items-end">
                     <Image
                         src={place?.image || '../../fake.png'}

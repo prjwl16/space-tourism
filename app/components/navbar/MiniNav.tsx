@@ -15,10 +15,6 @@ function MiniNavbar({ items, onTabChange }: ComponentProps) {
                         className="text-sm font-normal tracking-wider font-barlowCondensed tablet:text-lg tablet:tracking-widest"
                         onClick={() => onTabChange(key)}
                     >
-                        {' '}
-                        <span className="max-desktop:hidden">
-                            {key.prefix}
-                        </span>{' '}
                         {key.name}
                     </p>
                 </ul>

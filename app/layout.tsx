@@ -26,7 +26,9 @@ export default function RootLayout({
                 <nav>
                     <Navbar />
                 </nav>
-                <main className="main">{children}</main>
+                <main className="main flex-grow flex justify-center">
+                    {children}
+                </main>
             </body>
         </html>
     );
