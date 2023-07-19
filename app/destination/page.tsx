@@ -17,13 +17,13 @@ const items = [
         link: '/destination',
     },
     {
-        index: 0,
+        index: 2,
         prefix: '02',
         name: 'EUROPA',
         link: '/crew',
     },
     {
-        index: 2,
+        index: 3,
         prefix: '03',
         name: 'TITAN',
         link: '/technology',
