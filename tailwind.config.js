@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -46,13 +48,9 @@ module.exports = {
                 body: '28px',
             },
             backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-conic':
-                    'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-                'hero-mobile':
-                    "url('../public/home/background-home-mobile.jpg')",
-                'destination-mobile':
-                    "url('../public/destination/background-destination-mobile.jpg')",
+                'hero-mobile': "url('/home/mobile-home.jpg')",
+                'hero-tablet': "url('/home/tablet-home.jpeg')",
+                'hero-desktop': "url('/home/desktop-home.jpeg')",
             },
             height: {
                 min: '1px',

@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
-import MiniNavbar from '../components/navbar/MiniNav';
-import { Destination } from '../props/destinationProps';
+import MiniNavbar from '../../components/navbar/MiniNav';
+import { Destination } from '../../props/destinationProps';
 
 const items = [
     {
@@ -29,9 +29,9 @@ const items = [
         link: '/technology',
     },
 ];
-import places from '@/app/destination/destination';
+import places from '@/app/(pages)/destination/destination';
 import { useState } from 'react';
-import { Item } from '../props/NavProps';
+import { Item } from '../../props/NavProps';
 
 function Destination() {
     const [place, setPlace] = useState<Destination>(places[0]);
